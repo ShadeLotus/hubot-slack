@@ -98,7 +98,7 @@ class SlackBot extends Adapter
 
   message: (msg) =>
     # Ignore our own messages
-    return if msg.user == @self.id
+    # return if msg.user == @self.id
 
     channel = @client.getChannelGroupOrDMByID msg.channel if msg.channel
 
